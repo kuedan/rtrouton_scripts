@@ -65,7 +65,7 @@ defaults write /System/Library/User\ Template/English.lproj/Library/Preferences/
 # To revert it back to /bin/sh, run the following command:
 # dscl . -change /Users/root UserShell /usr/bin/false /bin/sh
 
-dscl . -create /Users/root UserShell /usr/bin/false
+#dscl . -create /Users/root UserShell /usr/bin/false
 
 # Make a symbolic link from /System/Library/CoreServices/Directory Utility.app 
 # to /Applications/Utilities so that Directory Utility.app is easier to access.
@@ -108,7 +108,7 @@ defaults write /Library/Preferences/com.apple.loginwindow SHOWFULLNAME -bool tru
 
 # Disable external accounts (i.e. accounts stored on drives other than the boot drive.)
 
-defaults write /Library/Preferences/com.apple.loginwindow EnableExternalAccounts -bool false
+#defaults write /Library/Preferences/com.apple.loginwindow EnableExternalAccounts -bool false
 
 # Set the ability to  view additional system info at the Login window
 # The following will be reported when you click on the time display 
@@ -247,7 +247,7 @@ launchctl load /System/Library/LaunchDaemons/com.apple.loginwindow.plist
 
 # Remove setup LaunchDaemon item
 
-srm /Library/LaunchDaemons/com.company.initialsetup.plist
+#srm /Library/LaunchDaemons/com.company.initialsetup.plist
 
 # Make script self-destruct
 
